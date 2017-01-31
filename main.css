@@ -8,29 +8,49 @@ body {
 }
 
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
+@media screen and (min-width:768px){
+    .navbar-brand-centered {
+        position: absolute;
+        left: 50%;
+        display: block;
+        width: 160px;
+        text-align: center;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+        margin-left: -80px;
+    }
 
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
+    nav.navbar.navbar-default {
+          background-color: black;
+          border-color: #e7e7e7;
+              position: relative;
+    height: 65px;
+    margin:0;
+    border: 1px solid transparent;
+    }
 
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
+    .navbar-brand.navbar-brand-centered {
+      background-color: black;
+      font-size: 40px;
+      font-family: serif;
+      color: white;
+      border-bottom: solid 2px white;
+    }
+
+    ul.nav.navbar-nav {
+      float: left;
+    padding-left: 275px;
+    padding-top: 5px;
+    margin: 0;
+    }
+
+    ul.nav.navbar-nav.navbar-right {
+    padding-right: 240px;
+    padding-top: 5px;
+    margin: 0;
+    }
+
 }
 
 
@@ -42,7 +62,6 @@ body {
     height: 500px;
     margin-bottom: 60px;
     background-color: white;
-    margin-top: 75px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -99,6 +118,11 @@ ol.carousel-indicators {
   letter-spacing: -1px;
 }
 
+img.featurette-image.img-responsive.center-block {
+    height: 400px;
+    border-radius: 10px;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -139,4 +163,167 @@ ol.carousel-indicators {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+/* Footer CSS */
+
+.full {
+    width: 100%;
+}
+
+.gap {
+    height: 30px;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+.footer {
+    background: #EDEFF1;
+    height: auto;
+    padding-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-top: 1px solid #DDDDDD;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer img {
+    max-width: 100%;
+}
+
+.footer h3 {
+    border-bottom: 1px solid #BAC1C8;
+    color: #54697E;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 40px 0 10px;
+    text-transform: uppercase;
+}
+
+.footer ul {
+    font-size: 13px;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 15px;
+    color: #7F8C8D;
+}
+
+.footer ul li a {
+    padding: 0 0 5px 0;
+    display: block;
+}
+
+.footer a {
+    color: #78828D
+}
+
+.supportLi h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: normal;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+}
+
+.newsletter-box input#appendedInputButton {
+    background: #FFFFFF;
+    display: inline-block;
+    float: left;
+    height: 30px;
+    clear: both;
+    width: 100%;
+}
+
+.newsletter-box .btn {
+    border: medium none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.newsletter-box {
+    overflow: hidden;
+}
+
+.bg-gray {
+    background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+    box-shadow: 0 1px 0 #B4B3B3;
+}
+
+.social li {
+    background: none repeat scroll 0 0 #B5B5B5;
+    border: 2px solid #B5B5B5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 8px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 36px;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+
+.social li:hover {
+    transform: scale(1.15) rotate(360deg);
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+}
+
+.social li a {
+    color: #EDEFF1;
+}
+
+.social li:hover {
+    border: 2px solid #2c3e50;
+    background: #2c3e50;
+}
+
+.social li a i {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+    color: #EDEFF1 !important;
+}
+
+.footer-bottom {
+    background: #E3E3E3;
+    border-top: 1px solid #DDDDDD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-bottom p.pull-left {
+    padding-top: 6px;
+}
+
+.footer-bottom p.pull-left {
+    color: #444444;
+}
+
+.payments {
+    font-size: 1.5em;
 }
