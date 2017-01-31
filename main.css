@@ -2,6 +2,9 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html,body {
+  height: 100%;
+}
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
@@ -22,9 +25,9 @@ body {
     }
 
     nav.navbar.navbar-default {
-          background-color: black;
-          border-color: #e7e7e7;
-              position: relative;
+    background-color: black;
+    border-color: #e7e7e7;
+    position: relative;
     height: 65px;
     margin:0;
     border: 1px solid transparent;
@@ -39,7 +42,7 @@ body {
     }
 
     ul.nav.navbar-nav {
-      float: left;
+    float: left;
     padding-left: 275px;
     padding-top: 5px;
     margin: 0;
@@ -51,7 +54,83 @@ body {
     margin: 0;
     }
 
+    .navbar-default .navbar-nav > li > a {
+    color: white;
+    }
 }
+
+@media screen and (max-width:500px){
+
+    .navbar-brand-centered {
+        position: absolute;
+        left: 37%;
+        display: block;
+        text-align: center;
+    }
+
+    nav.navbar.navbar-default {
+      background-color: black;
+      border-color: #e7e7e7;
+      position: relative;
+      height: 65px;
+      margin: 0;
+      border: 1px solid transparent;
+        }
+
+  .navbar-brand.navbar-brand-centered {
+      background-color: black;
+      font-size: 36px;
+      font-family: serif;
+      color: white;
+      border-bottom: solid 2px white;
+    }
+
+
+    .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 0px;
+    left: 15%;
+    z-index: 100;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    font-size: 13px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+#myCarousel {
+    height: 100%;
+    margin-bottom: 60px; 
+    background-color: #777;
+}
+
+.carousel.item.active {
+    height: 100%;
+    background-color: #777;
+}
+
+
+    .carousel-caption h1 {
+      margin: 0;
+    }
+
+    ol.carousel-indicators {
+      display: none;
+    }
+
+ }
+
+
+
 
 
 /* CUSTOMIZE THE CAROUSEL
