@@ -135,6 +135,26 @@
             padding-right: 95px;
             padding-left: 0;
         }
+
+         .marketing .col-lg-4 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .marketing h2 {
+        font-weight: normal;
+    }
+    
+    .marketing .col-lg-4 p {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .marketing .row {
+       
+    }
+    
+
     }
     
     @media screen and (max-width:768px) {
@@ -171,7 +191,7 @@
     height: 55px;
     margin: 0;
 }
-        }
+        
 
         .mobilelogo {
         font-size: 36px;
@@ -296,6 +316,193 @@
     }
     
 
+    /*Contact Us Page CSS*/
+    .form-horizontal legend {
+        text-align: center;
+        padding-bottom: .5%;
+    }
+
+
+    /*gallery page css*/
+
+    .gallery_line_1 .caption {
+        padding-bottom: 10%;
+    }
+
+
+    .gallery_line_1 img {
+        max-height: 450px;
+        width: auto;
+    }
+
+   .gallery_line_1 .first .customerQuote {
+      position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 9%;
+    visibility: hidden;
+}
+
+.gallery_line_1 .first:hover .customerQuote {
+visibility:visible;
+}
+
+  .gallery_line_1 .second .customerQuote {
+      position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 9%;
+    visibility: hidden;
+}
+
+.gallery_line_1 .second:hover .customerQuote {
+visibility:visible;
+}
+
+    .gallery_line_1 .third .customerQuote {
+      position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 9%;
+    visibility: hidden;
+}
+
+.gallery_line_1 .third:hover .customerQuote {
+visibility:visible;
+}
+
+    .gallery_line_2 .caption {
+        padding-bottom: 10%;
+    }
+
+ .gallery_line_2 img {
+        max-height: 450px;
+        width: auto;
+    }
+
+
+       .gallery_line_2 .first .customerQuote {
+      position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 9%;
+    visibility: hidden;
+}
+
+.gallery_line_2 .first:hover .customerQuote {
+visibility:visible;
+}
+
+  .gallery_line_2 .second .customerQuote {
+      position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 9%;
+    visibility: hidden;
+}
+
+.gallery_line_2 .second:hover .customerQuote {
+visibility:visible;
+}
+
+    .gallery_line_2 .third .customerQuote {
+      position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 9%;
+    visibility: hidden;
+}
+
+.gallery_line_2 .third:hover .customerQuote {
+visibility:visible;
+}
+
+
+ .gallery_line_3 .caption {
+        padding-bottom: 10%;
+    }
+
+ .gallery_line_3 img {
+        max-height: 450px;
+        width: auto;
+    }
+
+
+       .gallery_line_3 .first .customerQuote {
+      position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 9%;
+    visibility: hidden;
+}
+
+.gallery_line_3 .first:hover .customerQuote {
+visibility:visible;
+}
+
+  .gallery_line_3 .second .customerQuote {
+      position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 9%;
+    visibility: hidden;
+}
+
+.gallery_line_3 .second:hover .customerQuote {
+visibility:visible;
+}
+
+    .gallery_line_3 .third .customerQuote {
+      position: absolute;
+    bottom: 6em;
+    left: 1em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 9%;
+    visibility: hidden;
+}
+
+.gallery_line_3 .third:hover .customerQuote {
+visibility:visible;
+}
+
+  
+
+
     /* MARKETING CONTENT
 -------------------------------------------------- */
     /* Center align the text within the three columns below the carousel */
@@ -355,6 +562,8 @@
         }
         #activeLink {
             color: #fff;
+            font-weight: bold;
+            text-decoration: underline;
         }
         /* Bump up size of carousel content */
         .carousel-caption p {
