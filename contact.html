@@ -82,7 +82,8 @@ mike@cincybarndoors.com</p>
       </div>
       </div>
 
-      <form class="form-horizontal">
+      <form id="gform" method="POST"class="form-horizontal" 
+  action="https://script.google.com/macros/s/AKfycbyn7aj1wfHF3ya52tWNwSzcAnlqsQqrI2FILcsyklcktet8yGND/exec">
 <fieldset>
 
 <!-- Form Name -->
@@ -92,7 +93,7 @@ mike@cincybarndoors.com</p>
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Your Name</label>  
   <div class="col-md-4">
-  <input required id="textinput" name="textinput" type="text" placeholder="Ex. John Doe" class="form-control input-md"> 
+  <input required id="textinput" name="name" type="text" placeholder="Ex. John Doe" class="form-control input-md"> 
   <span class="requirmentMessage">(Required)</span>
   </div>
 </div>
@@ -101,7 +102,7 @@ mike@cincybarndoors.com</p>
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Your Email</label>  
   <div class="col-md-4">
-  <input required id="textinput" name="textinput" type="text" placeholder="Ex. Cincy@gmail.com" class="form-control input-md">
+  <input required id="textinput" name="email" type="text" placeholder="Ex. Cincy@gmail.com" class="form-control input-md">
   <span class="requirmentMessage">(Required)</span>
   </div>
 </div>
@@ -110,7 +111,7 @@ mike@cincybarndoors.com</p>
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Phone Number</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="Ex. (513)888.8888" class="form-control input-md">
+  <input id="textinput" name="phone number" type="text" placeholder="Ex. (513)888.8888" class="form-control input-md">
   <span class="optionalMessage">(Optional)</span>
   </div>
 </div>
@@ -119,11 +120,12 @@ mike@cincybarndoors.com</p>
 <div class="form-group">
   <label class="col-md-4 control-label" for="textarea">Message</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea" type="text" placeholder="Enter your message here..."></textarea>
+    <textarea class="form-control" id="textarea" name="message" type="text" placeholder="Enter your message here..."></textarea>
   </div>
 </div>
 
-<!-- Button -->
+</fieldset>
+
 <div class="form-group">
   <label class="col-md-4 control-label" for="singlebutton"></label>
   <div class="col-md-4">
@@ -131,9 +133,12 @@ mike@cincybarndoors.com</p>
   </div>
 </div>
 
-</fieldset>
 </form>
 
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
     
     <!--Footer HTML-->
   
@@ -202,6 +207,9 @@ mike@cincybarndoors.com</p>
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
     </script>
     <script src="/js/bootstrap.min.js"></script>
+
+     <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <!--     <script src="/js/vendor/holder.min.js"></script>
  -->
