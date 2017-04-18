@@ -516,7 +516,7 @@
 
      .carousel-caption.second {
         z-index: 10;
-        bottom: 55px !important;
+        bottom: 0 !important;
     }
     /* Declare heights because of positioning of img element */
     
@@ -537,9 +537,8 @@
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 25px;
-        height: 215px;
-        padding-top: 15px;
+        height: 250px;
+        padding-top: 55px;
     }
 
     
