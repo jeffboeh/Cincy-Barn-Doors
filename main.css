@@ -823,7 +823,7 @@
         }
         #activeLink {
             color: #337ab7;
-            text-decoration: underline;
+            font-size: 1.2em;
         }
         .mobilelogo {
             display: none;
