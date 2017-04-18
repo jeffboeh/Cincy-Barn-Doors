@@ -148,6 +148,10 @@
         border: none;
     }
 
+    #thankyou_message {
+        text-align: center;
+    }
+
     /* Footer CSS */
  .footer-distributed{
     background-color: #292c2f;
