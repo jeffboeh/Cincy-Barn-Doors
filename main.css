@@ -341,6 +341,41 @@
         margin-left: 0;
     }
 
+     .carousel-caption {
+            position: absolute;
+            right: 15%;
+            bottom: 0px !important;
+            left: 15%;
+            z-index: 100;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            font-size: 13px;
+        }
+
+        .carousel-caption.third {
+            position: absolute;
+            right: 15%;
+            left: 15%;
+            bottom: 15px !important;
+            z-index: 100;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            font-size: 13px;
+        }
+
+        .carousel-inner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 100%;
+        }
+
 }
     
     @media screen and (min-width:769px) {
@@ -433,10 +468,22 @@
             color: white;
             border-bottom: solid 1px white;
         }
+
+        li.logomark {
+            display: none;
+        }
+
+        ul.nav.navbar-nav {
+    float: left;
+    width: 112%;
+    font-size: 18px;
+    max-height: 300px;
+}
+
         .carousel-caption {
             position: absolute;
             right: 15%;
-            bottom: 0px;
+            bottom: 0px !important;
             left: 15%;
             z-index: 100;
             padding-top: 20px;
@@ -452,8 +499,17 @@
             overflow: hidden;
             height: 100%;
         }
+
+        .carousel-inner .item .second-slide {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px !important;
+    padding-top: 55px;
+}
+
         #myCarousel {
-            height: 100%;
+            height: 100% !important;
             margin-bottom: 60px;
             background-color: #292e37;
         }
@@ -463,10 +519,17 @@
         }
         .carousel-caption h1 {
             margin: 0;
+            padding-bottom: 8px;
+            font-size: 1.8em;
         }
         ol.carousel-indicators {
             display: none;
         }
+
+        .carousel-inner .item .third-slide {
+   
+    height: 320px !important;
+}
 
     
     .gallery_line_1 .first .customerQuote {
@@ -532,12 +595,16 @@
     
     .carousel-caption {
         z-index: 10;
-        bottom: -15px;
+        bottom: 0px;
     }
 
      .carousel-caption.second {
         z-index: 10;
         bottom: 0 !important;
+    }
+
+     .carousel-caption.third {
+        z-index: 10;
     }
     /* Declare heights because of positioning of img element */
     
@@ -550,7 +617,7 @@
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        height: 375px;
+        height: 350px;
         padding-top: 15px;
     }
     
@@ -558,7 +625,7 @@
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        height: 250px;
+        height: 260px;
         padding-top: 55px;
     }
 
@@ -567,7 +634,7 @@
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        height: 300px;
+        height: 335px;
         padding-top: 15px;
         border-radius: 50px;
     }
@@ -851,11 +918,12 @@
         /* Bump up size of carousel content */
         .carousel-caption p {
             margin-bottom: 20px;
-            font-size: 21px;
+            font-size: 1.2em;
             line-height: 1.4;
         }
         .carousel-caption h1 {
-            margin: 10px;
+            font-size: 1.8em;
+        }
         }
         .featurette-heading {
             font-size: 50px;
@@ -866,7 +934,19 @@
         .featurette-heading {
             margin-top: 120px;
         }
-    }
+}
+        @media (min-width: 350px) and (max-width: 415px) {
+            #slidetest {
+                top: 45px !important;
+            }
+        }
+
+        
+      
+    
+
+
+    
 
     
     
