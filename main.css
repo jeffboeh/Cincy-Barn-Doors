@@ -60,11 +60,14 @@
     
     nav.navbar.navbar-default {
         background-color: black;
-        border-color: #e7e7e7;
+        border-radius: 0px !important;
         position: relative;
         height: 65px;
         margin: 0;
-        border: 1px solid transparent;
+        border-bottom: 1px solid white;
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
     }
     
     .navbar-brand.navbar-brand-centered {
@@ -87,6 +90,12 @@
         padding-top: 5px;
         margin: 0;
     }
+
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: white;
+    background-color: transparent;
+    opacity: .8;
+}
     
     .navbar-default .navbar-nav > li > a {
         color: white;
@@ -595,7 +604,7 @@
     
     .carousel-caption {
         z-index: 10;
-        bottom: 0px;
+        bottom: 10px;
     }
 
      .carousel-caption.second {
@@ -881,6 +890,7 @@
     .featurette .lead {
         padding-left: 5%;
         padding-right: 5%;
+        font-size: 14px;
     }
     
     img.featurette-image.img-responsive.center-block {
@@ -910,7 +920,6 @@
         }
         #activeLink {
             color: #337ab7;
-            font-size: 1.2em;
         }
         .mobilelogo {
             display: none;
@@ -926,7 +935,7 @@
         }
         }
         .featurette-heading {
-            font-size: 50px;
+            font-size: 28px;
         }
     }
     
