@@ -329,6 +329,7 @@
     margin-bottom: 5px;
 }
 
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
@@ -406,28 +407,8 @@
     }
     
     @media screen and (max-width:767px) {
-        /*
-        .navbar-brand-centered {
-            position: absolute;
-            left: 37%;
-            display: block;
-            text-align: center;
-        }
-        nav.navbar.navbar-default {
-            background-color: black;
-            border-color: #e7e7e7;
-            position: relative;
-            height: 65px;
-            margin: 0;
-            border: 1px solid transparent;
-        }
-        .navbar-brand.navbar-brand-centered {
-            background-color: black;
-            font-size: 36px;
-            font-family: serif;
-            color: white;
-            border-bottom: solid 2px white;
-        } */
+        
+
         nav.navbar.navbar-default {
             background-color: black;
             border-bottom: 1px solid #e7e7e7;
@@ -584,6 +565,10 @@
         visibility: visible !important;
     }
 
+    .featurette-content {
+            margin-top: 0px !important;
+        }
+
 
     }
     /* CUSTOMIZE THE CAROUSEL
@@ -677,10 +662,13 @@
     }
     /*Contact Us Page CSS*/
     
-    .form-horizontal legend {
+    legend {
+        padding-top: 10px;
+        color: #5a5a5a;
         text-align: center;
-        padding-bottom: .5%;
     }
+
+
     /*gallery page css*/
     
     .gallery_line_1 .caption {
@@ -874,7 +862,7 @@
 ------------------------- */
     
     .featurette-divider {
-        margin: 80px 0;
+        margin: 20px 0;
         /* Space out the Bootstrap <hr> more */
     }
     /* Thin out the marketing headings */
@@ -937,6 +925,11 @@
         .featurette-heading {
             font-size: 28px;
         }
+
+        .featurette-content {
+            margin-top: 120px;
+        }
+
     }
     
     @media (min-width: 992px) {
@@ -946,7 +939,7 @@
 }
         @media (min-width: 350px) and (max-width: 415px) {
             #slidetest {
-                top: 45px !important;
+                top: 55px !important;
             }
         }
 
